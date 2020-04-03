@@ -941,7 +941,7 @@ This variable is a normal hook.  See Info node `(elisp)Hooks'."
   :package-version '(flycheck . "0.21"))
 
 (defface flycheck-error-list-highlight
-  '((t :inherit highlight))
+  '((t :bold t))
   "Flycheck face to highlight errors in the error list."
   :package-version '(flycheck . "0.15")
   :group 'flycheck-faces)
