@@ -4005,7 +4005,7 @@ show the indicator."
       (let* ((fringe-width (pcase side
                              (`left-fringe (car (window-fringes)))
                              (`right-fringe (cadr (window-fringes)))))
-             (hi-res (= 16 fringe-width)))
+             (hi-res (>= fringe-width 16)))
         (list side (flycheck-error-level-fringe-bitmap level hi-res)
               (flycheck-error-level-fringe-face level))))
      ((or `left-margin `right-margin)
