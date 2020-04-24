@@ -73,6 +73,12 @@
     the ``:end-line`` and ``:end-column`` properties. [GH-1400]
   - Error patterns can now mention ``end-line`` and ``end-column`` in addition
     to ``line`` and ``column``.
+  - Error highlighting is now configurable, using the new
+    ``flycheck-highlighting-style`` variable: instead of applying
+    level-dependent faces (typically with wavy underlines), Flycheck can now
+    insert delimiters around errors, or a mix styles depending on how many
+    lines an error covers.  Additionally, hatches are added in the margins to
+    indicate errors that span multiple lines.
 
 - Improvements
 
