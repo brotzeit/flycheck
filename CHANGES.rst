@@ -102,6 +102,8 @@
   - Config-file variables can now be set to a list of file names.  This is
     useful for checkers like mypy which don't run correctly when called from a
     subdirectory without passing an explicit config file. [GH-1711]
+  - Thanks to algorithmic improvements in error reporting, Flycheck is now much
+    faster in large buffers. [GH-1750]
 
 31 (Oct 07, 2017)
 =================
